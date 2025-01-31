@@ -65,3 +65,30 @@ span {
 .details-container .card img {
   width: 400px;
 }
+
+.welcome-text {
+  width: fit-content;
+  animation: 1.5s ease-in 2s 1 spin;
+}
+
+.funny-cat {
+  animation: 0.2s ease-in-out infinite alternate shrink-grow;
+}
+
+@keyframes spin {
+  from {
+    rotate: none;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes shrink-grow {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 75% 40%;
+  }
+}
