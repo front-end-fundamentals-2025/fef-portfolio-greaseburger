@@ -31,10 +31,23 @@ textarea {
 section {
   padding: 5px;
   font-size: 18px;
+  display: flex;
+  flex-direction: row;
 }
 
-span {
-  font-size: 32px;
+.cat-button {
+  margin-left: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-button span {
+  font-size: 64px;
+}
+
+.cat-button span:hover {
+  cursor: pointer;
 }
 
 .grid-container {
