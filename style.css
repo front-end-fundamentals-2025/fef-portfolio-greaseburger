@@ -40,10 +40,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: 0px;
 }
 
 .cat-button span {
   font-size: 64px;
+  user-select: none;
 }
 
 .cat-button span:hover {

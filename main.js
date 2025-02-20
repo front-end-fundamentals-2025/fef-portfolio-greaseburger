@@ -1,7 +1,20 @@
-const catButton = document.querySelector(".cat-button");
+const catButton = document.querySelector(".cat-button span");
+const parent = catButton.parentElement;
+let isDragging = false;
 
-console.log(catButton);
+catButton.addEventListener("mousedown", (e) => {
+  isDragging = true;
+});
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+});
 
-catButton.addEventListener("click", (e) => {
-  console.log(e);
+document.addEventListener("mousemove", (e) => {
+  if (isDragging) {
+    parent.style.margin = 0;
+    parent.style.position = "absolute";
+
+    parent.style.left = e.clientX + "px";
+    parent.style.top = e.clientY + "px";
+  }
 });
